@@ -15,7 +15,7 @@ public class ProductServlet extends HttpServlet {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:8080/yourdb", "user", "password"
+                    "jdbc:mysql://localhost:8080/yourdb", "admin", "password"
             );
             dao = new ProductDAO(conn);
         } catch (Exception e) {

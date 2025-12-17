@@ -1,12 +1,7 @@
-package com.example;
-<%--
-  Created by IntelliJ IDEA.
-  User: vlada
-  Date: 12/15/2025
-  Time: 1:30 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page import="java.util.*,entity.ProductDAO,entity.Product,com.example.ProductServlet" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<%@ page import="java.util.*,entity.ProductDAO,entity.Product" %>
 <%
     ProductDAO dao = (ProductDAO) application.getAttribute("productDAO");
     List<Product> products = dao.getAllProducts();
@@ -41,6 +36,6 @@ package com.example;
     </tr>
     <% } %>
 </table>
-<a href="product_create.jsp">Add New Product</a>
+<a href="create.jsp">Add New Product</a>
 </body>
 </html>
