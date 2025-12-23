@@ -17,7 +17,7 @@
     Description: <input type="text" name="product_description" value="<%= product.getProduct_description() %>"/><br/>
     Color: <input type="text" name="product_color" value="<%= product.getProduct_color() %>"/><br/>
     Size: <input type="number" name="product_size" value="<%= product.getProduct_size() %>"/><br/>
-    Price: <input type="text" name="product_price" value="<%= product.getProduct_price() %>"/><br/>
+    Price: <input type="number" name="product_price" value="<%= product.getProduct_price() %>"/><br/>
     <input type="submit" value="Update"/>
 </form>
 </body>

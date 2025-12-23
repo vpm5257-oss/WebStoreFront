@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet("/login")
+@WebServlet("LoginWebApp/login")
 public class LoginServlet extends HttpServlet {
 
     @Override
